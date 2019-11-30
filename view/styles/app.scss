@@ -1,0 +1,173 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: hsl(0, 0%, 93.3%);
+}
+
+//#app {
+//  min-height: 100%;
+//  margin-bottom: -63px;
+//}
+
+//#app:after {
+//  content: "";
+//  display: block;
+//}
+//
+//#footer, #app:after {
+//  height: 60px;
+//}
+
+#footer {
+  background: transparent;
+  color: #999;
+  .data {
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+    padding-bottom: 20px;
+  }
+}
+
+.login-box {
+  margin-top: -150px;
+}
+
+.camera-wrapper {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.camera-wrapper:hover {
+  .ir-center {
+    opacity: 1;
+  }
+}
+
+.camera-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: 999;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.camera-left:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #fff;
+}
+
+.camera-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: 999;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.camera-right:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #fff;
+}
+
+.camera-top {
+  position: absolute;
+  top: 0;
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: 999;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.ir-center {
+  position: absolute;
+  top: 45%;
+  right: 48%;
+  height: 50px;
+  opacity: 0;
+  z-index: 999;
+  display: flex;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  a {
+    color: #ddd;
+  }
+
+  a:hover{
+    color: #ddd;
+  }
+}
+
+.camera-top:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #fff;
+}
+
+.camera-bottom {
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.0);
+  z-index: 999;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ddd;
+}
+
+.camera-bottom:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #fff;
+}
+
+.app-login {
+  min-width: 100%;
+  background: -moz-radial-gradient(center, ellipse cover, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(153, 218, 255, 1)), color-stop(100%, rgba(0, 128, 128, 1))); /* safari4+,chrome */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%); /* ie10+ */
+  background: radial-gradient(ellipse at center, rgba(153, 218, 255, 1) 0%, rgba(0, 128, 128, 1) 100%); /* w3c */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
